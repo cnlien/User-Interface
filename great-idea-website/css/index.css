@@ -67,8 +67,10 @@ h1, h2, h3, h4, h5 {
 @import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
 
 nav {
+	position: fixed;
+	overflow: hidden;
 	min-height: 80px;
-	max-width: 1024px;
+	width: 100%;
 	padding: 0 30px;
 	font-size: .9em;
 	margin: 0 auto;
@@ -82,11 +84,11 @@ nav a {
 	padding: 0 25px;
 	color:white;
 	text-decoration: none;
-
+	transition: background-color .3s ease;
 }
 
 	nav a:hover {
-		background-color:	#829fcf;;
+		background-color:	black;
 	}
 
 	nav .logo{
@@ -136,6 +138,7 @@ header {
 	min-width: 950px;
 	border-bottom: 1px solid black;
 	margin: 0 auto;
+	padding-top: 80px;
 }
 	.headerLeft {
 		margin: 0;
@@ -158,7 +161,7 @@ header {
 			border: 1px solid black;
 			font-size: 1em;
 			font-family: 'Titillium Web', sans-serif;
-			transition: .5;
+			transition: background-color 0.3s ease;
 		}
 
 		button:hover{
