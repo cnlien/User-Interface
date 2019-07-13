@@ -64,12 +64,17 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+
 nav {
+	position: fixed;
+	overflow: hidden;
 	min-height: 80px;
-	max-width: 1024px;
+	width: 100%;
 	padding: 0 30px;
 	font-size: .9em;
 	margin: 0 auto;
+	background: #bababa;
 }
 
 nav a {
@@ -77,9 +82,15 @@ nav a {
 	height: 80px;
 	line-height: 80px;
 	padding: 0 25px;
-	color:#b4b4b4;
+	color:white;
 	text-decoration: none;
+	transition: background-color .3s ease;
 }
+
+	nav a:hover {
+		background-color:	black;
+	}
+
 	nav .logo{
 		display: inline-block;
 		height: 80px;
@@ -87,9 +98,15 @@ nav a {
 		float: right;
 		background-image: url("../img/logo.png");
 		background-repeat: no-repeat;
+		background-color:#bababa;
 		vertical-align: bottom;
 		background-position: center;
 	}
+
+	nav .logo:hover{
+		background-color: #bababa;
+	}
+
 		@media (max-width:900px) {
 			nav .logo{
 				display: none;
@@ -107,6 +124,10 @@ nav a {
 		font-weight: bold;
 		margin-bottom: 1em;
 	}
+	p{
+		font-family: 'Barriecito', cursive;
+		/*boy is this font ugly but it looks different so ¯\_(ツ)_/¯*/
+	}
 	a {
 		text-decoration: none;
 	}
@@ -117,6 +138,7 @@ header {
 	min-width: 950px;
 	border-bottom: 1px solid black;
 	margin: 0 auto;
+	padding-top: 80px;
 }
 	.headerLeft {
 		margin: 0;
@@ -129,23 +151,28 @@ header {
 		display: block;
 		margin-top: 28%;
 	}
+
 		button{
 			display: block;
 			width: 180px;
 			height: 35px;
 			margin: 0 auto;
-			background: white;
+			background-color: white;
 			border: 1px solid black;
 			font-size: 1em;
 			font-family: 'Titillium Web', sans-serif;
+			transition: background-color 0.3s ease;
 		}
 
 		button:hover{
 			cursor: pointer;
+			background-color: #bababa;
+			border: 1px solid #bababa;
 		}
 
 		button:active{
-			background-color: #888888;
+			background-color: #1c1c1c;
+			color: white;
 		}
 
 	.headerRight {
